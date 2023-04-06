@@ -13,12 +13,17 @@ function App() {
     setCount(count -1);
   }
 
+  function handleRes(){
+    setCount(0);
+  }
+
   return (
           <div className='App'>
               <div className="box">
                 <p>{count}</p>
                 <button onClick={handleAdd} className="add">ADD</button>
                 <button onClick={handleSub} className="sub">SUB</button>
+                <button onClick={handleRes} className="reset">RESET</button>
               </div>
           </div>
   );
